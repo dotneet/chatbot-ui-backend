@@ -3,3 +3,4 @@ langchain
 openai
 uvicorn
 python-dotenv
+tiktoken
