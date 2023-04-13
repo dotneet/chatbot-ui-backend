@@ -1,13 +1,9 @@
+from typing import Dict, List
+
 import openai
-from typing import List, Dict
+
 
 async def chat(prompt: str, messages: List[Dict] = [], model: Dict = None, key: str = None):
-    # copy messages
-    messages = messages.copy()
-    completion = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=messages,
-    )
     resp = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=messages,
