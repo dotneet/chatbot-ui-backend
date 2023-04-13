@@ -23,8 +23,8 @@ def adjust_message_size(model: str, messages: List[Dict], max_token_size, output
     return result
 
 
-def call_chat_completion(prompt: str, messages: List[Dict] = [], model: Dict = None, key: str = None) -> str:
-    model_name = "gpt-3.5-turbo"
+def call_chat_completion(prompt: str, messages: List[Dict], model: Dict, key: str = None) -> str:
+    model_name = model['id']
     output_max_tokens = 2000
     messages = adjust_message_size(
         model_name, messages, 4000, output_max_tokens)
