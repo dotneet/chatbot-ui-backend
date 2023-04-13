@@ -1,0 +1,26 @@
+# Compiled Python files
+__pycache__/
+*.pyc
+
+# Dependency directories
+.venv/
+venv/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Project specific
+*.log
+*.sqlite3
+*.pyo
+*.pyd
+*.pyc
+
+
+# dotenv
+.env
+.env.local
+
