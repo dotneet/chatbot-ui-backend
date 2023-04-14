@@ -1,0 +1,6 @@
+{
+  "reportMissingTypeStubs": "information",
+  "reportUnknownParameterType": "information",
+  "reportUnknownMemberType": "information",
+  "reportUnknownArgumentType": "information"
+}

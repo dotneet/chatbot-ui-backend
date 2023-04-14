@@ -7,10 +7,18 @@
       "module": "uvicorn",
       "args": ["src.main:app", "--reload"],
       "jinja": true,
-      "justMyCode": true,
+      "justMyCode": false,
       "env": {
         "PYTHONPATH": "${workspaceFolder}/.venv/lib/python3.9/site-packages"
       }
+    },
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": false
     }
   ]
 }
